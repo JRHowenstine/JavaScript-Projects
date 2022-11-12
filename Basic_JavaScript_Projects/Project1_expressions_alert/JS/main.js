@@ -15,7 +15,7 @@ function bigImg(x) { //Created function to increase image size
     x.style.width = "200px";
   }
   
-function normalImg(x) { //Created functionfor normal image size
+function normalImg(x) { //Created function for normal image size
     x.style.height = "75px";
     x.style.width = "100px";
   }
