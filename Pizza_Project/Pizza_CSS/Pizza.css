@@ -59,12 +59,20 @@
 
 body {
     background-color:rgb(172, 237, 240);
+    opacity: 1;
+    transition: 3s opacity;
+}
+
+body.fade-out {
+    opacity: 0;
+    transition:none;
 }
 
 h1 {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     color: blueviolet;
     text-align: center;
+    font-size:10vw;
 }
 
 h3 {
@@ -75,4 +83,14 @@ h3 {
 div {
     font-family: 'Times New Roman', Times, serif;
     color: coral;
+}
+
+/* Popup form - hidden by default */
+.form-popup {
+    display: none;
+    position:fixed;
+    bottom:0;
+    right:15px;
+    border: 5px solid black;
+    z-index:9;
 }

@@ -8,6 +8,9 @@
         <link rel="stylesheet" type="text/css" href="Pizza_CSS/Pizza.css"/>
     </head>
     <body>
+        <script>
+            document.body.classList.add('fade-out');
+        </script>
         <div class="menuBG">
             <h1 style="margin:0 0px 0 20px;">Pizza Drill Tutorial</h1>
             <input id="btnOrder" type="button" onclick="getReceipt()" value="Place Order">
@@ -45,6 +48,23 @@
                     <div id="totalPrice"></div>
                 </div>
             </form>
+
+            <br>
+            <!-- button to open popup form -->
+            <button class="open-button" onclick="openForm()">Open Contact Form</button>
+            <!-- pop up form with validation -->
+            <div class="form-popup" id="popup">
+                <form name="myForm" action="/action_page.php" class="form-container" onsubmit="return validateForm()" method="post">
+                <h2>Contact Info:</h2>
+                <label for="firstName">First Name</label><br>
+                <input type="text" id="firstName" name="firstName" value=""><br>
+                <label for="lastName">Last Name</label><br>
+                <input type="text" id="lastName" name="lastName" value=""><br>
+                <label for="phoneNumber">Phone Number</label><br>
+                <input type="text" id="phoneNumber" name="phoneNumber" value=""><br><br>
+                <input type="submit" value="Submit">
+                </form>
+            </div>
         </div>
     </body>
 </html>

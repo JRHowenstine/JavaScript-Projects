@@ -1,3 +1,6 @@
+window.addEventListener('DOMContentLoaded', () => {
+    document.body.classList.remove('fade-out');
+})
 function getReceipt() {
     // This initializes our string so it can get passed from
     //  function to function, growing line by line into a full receipt
@@ -54,3 +57,26 @@ function getTopping(runningTotal,text1) { // Select as many toppings as desired
     document.getElementById("showText").innerHTML=text1; // Display on page the list of size and toppings
     document.getElementById("totalPrice").innerHTML= "<h3>Total: <strong>$"+runningTotal+".00"+"</strong></h3>"; // Display total of order
 }
+
+function validateForm() {
+    let x = document.forms["myForm"]["firstName"].value;
+    if (x == "") {
+        alert("First name must be filled out");
+        return false;
+    }
+    let y = document.forms["myForm"]["lastName"].value;
+    if (y == "") {
+        alert("Last name must be filled out");
+        return false;
+    }
+    let z = document.forms["myForm"]["phoneNumber"].value;
+    if (z == "") {
+        alert("Phone number must be filled out");
+        return false;
+    }
+}
+
+function openForm() {
+    document.getElementById("popup").style.display = "block";
+}
+
