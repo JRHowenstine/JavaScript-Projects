@@ -97,6 +97,6 @@ div {
 .open-button{
     position: -webkit-sticky;
     position: sticky;
-    right:15px;
+    margin-left: 70%;
     bottom:0;
 }
