@@ -1,6 +1,6 @@
 # JavaScript-Projects
 
-This repository will contain all my projects created during the JavaScript Course.
+This repository contains my projects created during the JavaScript Course.
 
 Projects
 1) Pizza Menu
